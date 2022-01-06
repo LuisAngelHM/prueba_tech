@@ -23,9 +23,9 @@
             echo "Nombre del emisor: ".$xml_file->getAttribute("Nombre")."<br>";
             echo "RFC del emisor: ".$xml_file->getAttribute("Rfc")."<br>";
         }
-        if ($xml_file->name=="cfdi:Receptor"){
-            echo "Nombre del receptor: ".$xml_file->getAttribute("Nombre")."<br>";
-            echo "RFC del receptor: ".$xml_file->getAttribute("Rfc")."<br>";
+        if ($xml_file->name=="tfd:TimbreFiscalDigital"){
+            echo "El UUID es: ".$xml_file->getAttribute("UUID")."<br>";
+            echo "Se tibró en la fecha: ".$xml_file->getAttribute("FechaTimbrado")."<br>";
         }
     }
   ?>
